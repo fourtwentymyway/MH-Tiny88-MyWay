@@ -1,6 +1,4 @@
-//Ultrasonic Sensor HC-SR04 and Arduino Tutorial
-//by Dejan Nedelkovski,
-//www.HowToMechatronics.com
+
 
 #include <Wire.h>
 #include <Tiny4kOLED.h>
