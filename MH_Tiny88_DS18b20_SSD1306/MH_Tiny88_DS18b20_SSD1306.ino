@@ -27,18 +27,18 @@ void loop(void){
   sensors.requestTemperatures(); 
   
   oled.setCursor(15, 0);
-  oled.print("Degrees");
+  oled.print("degrees");
   oled.setCursor(4, 1);
-  oled.print("Fahrenheit:");
+  oled.print("fahrenheit:");
   oled.setCursor(15, 3);
   oled.println(sensors.getTempFByIndex(0));
   oled.setCursor(48, 3);
   oled.print("°F");
   /////Celcius////
   //oled.setCursor(15, 0);
-  //oled.print("Degrees");
+  //oled.print("degrees");
   //oled.setCursor(15, 1);
-  //oled.print("Celcius:");
+  //oled.print("celcius:");
   //oled.setCursor(15, 3);
   //Serial.print(sensors.getTempCByIndex(0));
   //oled.setCursor(48, 3);
