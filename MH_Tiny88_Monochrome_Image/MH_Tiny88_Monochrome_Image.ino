@@ -28,10 +28,10 @@ void loop() {
   oled.setFont(currentFont);
   oled.print(F("420MyWay")); //wrap strings in F() to save RAM!
   oled.setFont(currentFont);
-  oled.print(F(" OLED!"));
+  oled.print(F(" Tiny4kOLED!"));
   oled.setCursor(0, 2); //two rows down because the 8x16 font takes two rows of 8
-  oled.println(F("test")); //println will move the cursor 8 or 16 pixels down (based on the front) and back to X=0
-  oled.print(F("test test test test test")); //lines auto wrap
+  oled.println(F("4k")); //println will move the cursor 8 or 16 pixels down (based on the front) and back to X=0
+  
   
   delay(3000);
   //usage oled.bitmap(START X IN PIXELS, START Y IN ROWS OF 8 PIXELS, END X IN PIXELS, END Y IN ROWS OF 8 PIXELS, IMAGE ARRAY);
