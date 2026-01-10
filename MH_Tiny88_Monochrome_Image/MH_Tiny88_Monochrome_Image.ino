@@ -1,7 +1,5 @@
 
 
-// theoryCIRCUIT - ATtiny85 OLED 128x64 SSD1306 I2C Display Interface
-
 #include <Tiny4kOLED.h>
 //#include <Wire.h>
 #include <TinyI2CMaster.h>
