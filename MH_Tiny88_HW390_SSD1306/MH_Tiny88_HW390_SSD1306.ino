@@ -22,11 +22,11 @@ void loop() {
   int moistureAnalogicVal = analogRead(MOISTURE_ANALOGIC_IN) * SENSOR_READ_RATIO; // Read the analogic data and convert it to [0, 1023] range
   
   if (moistureAnalogicVal < BOARD_RESOLUTION * 0.1) {
-    oled.println("Drowned!");
+    oled.println("Super!");
   } else if (moistureAnalogicVal < BOARD_RESOLUTION * 0.33) {
     oled.println("really!");
   } else if (moistureAnalogicVal < BOARD_RESOLUTION * 0.66) {
-    oled.println("It is ok!");
+    oled.println("Plant ok!");
   } else if (moistureAnalogicVal < BOARD_RESOLUTION * 0.9) {
     oled.println("barely!");
   } else {
