@@ -31,7 +31,7 @@ void setup()
 	tft.setTextSize(0);
 	tft.setTextColor(ST7735_MAGENTA);
 	tft.setCursor(0, 0);
-	tft.println( "Fuck You!!!" );
+	tft.println( "Say Hello!!!" );
 
 }
 
