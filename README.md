@@ -1,4 +1,4 @@
-Arduino and Some Attiny85 Examples With Tiny4kOLED & PDQ_ST7785/PDQ_GFX .
+Arduino and Some Attiny85 Examples With Tiny4kOLED & PDQ_ST7735/PDQ_GFX .
 
 !!!ATTinyCore Or megaTinyCore Is Used For This Board Instead Of MH-ET Live Or Most Examples Wont Work!!!
 Latest Arduino IDE And Libraries Were Used .
