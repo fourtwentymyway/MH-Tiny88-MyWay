@@ -31,7 +31,7 @@ void loop()
   //-------------------------------------------------
   oled.setFont(currentFont);
   oled.setCursor(0, 3);
-  oled.print("Counter: ");
+  oled.print("#: ");
   oled.setCursor(70, 3);
   oled.println(i);
   delay(200);
