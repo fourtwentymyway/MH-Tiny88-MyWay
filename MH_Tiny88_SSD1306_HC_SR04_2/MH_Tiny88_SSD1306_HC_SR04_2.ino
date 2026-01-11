@@ -1,4 +1,4 @@
-#include <Tiny4kOLED.h>
+#include <Tiny4kOLED.h> 
 #include "Wire.h"
 int buz = 25, lamp = 0, trig = A2, echo = A3, pir = 20, distance;
 bool state = false;
