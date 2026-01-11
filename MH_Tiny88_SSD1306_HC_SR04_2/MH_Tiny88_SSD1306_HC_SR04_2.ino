@@ -1,6 +1,6 @@
 #include <Tiny4kOLED.h>
 #include "Wire.h"
-int buz = 25, lamp = 0, trig = A2, echo = A3, pir = 20, jarakdeteksi;
+int buz = 25, lamp = 0, trig = A2, echo = A3, pir = 20, distance;
 bool state = false;
 
 void setup() {
@@ -16,7 +16,7 @@ void setup() {
   pinMode(lamp, OUTPUT);
 
   oled.setCursor (0,0);
-  oled.print("Motion detector");
+  oled.print("Motion Detect");
   delay (1000);
   oled.clear();
 
@@ -28,15 +28,15 @@ void loop() {
 }
 
 void deteksi(){
-  if (digitalRead(pir) && state && jarakdeteksi > 10){
+  if (digitalRead(pir) && state && distance > 10){
     oled.setCursor (0,0);
-    oled.print("Motion detect!!      ");
+    oled.print("Motion Detect        ");
 
     state = false;
 
-  } else if (!digitalRead(pir) && !state && jarakdeteksi > 10){
+  } else if (!digitalRead(pir) && !state && distance > 10){
     oled.setCursor (0,0);
-    oled.print ("No motion detect     ");
+    oled.print ("No Motion Detect     ");
     oled.setCursor (0,1);
     oled.print ("                     ");
     oled.setCursor (0,2);
@@ -45,17 +45,17 @@ void deteksi(){
 
     state = true;
 
-  } else if (digitalRead(pir) && state && jarakdeteksi <=10){
+  } else if (digitalRead(pir) && state && distance <=10){
     digitalWrite(lamp, HIGH);
     oled.setCursor(0,0);
-    oled.print ("Warning, there is human detection");
+    oled.print ("Warning, Detection");
 
     state = false;
 
-  } else if (!digitalRead(pir) && !state || jarakdeteksi <=10){
+  } else if (!digitalRead(pir) && !state || distance <=10){
     digitalWrite(lamp, HIGH);
     oled.setCursor(0,0);
-    oled.print ("Warning, there is human detection");
+    oled.print ("Warning, Detection");
 
     state = false;
   }
@@ -71,5 +71,5 @@ void jarak(){
   digitalWrite(trig, LOW);
 
   int ping = pulseIn(echo, HIGH);
-  jarakdeteksi = ping / 58;
+  distance = ping / 58;
 }
