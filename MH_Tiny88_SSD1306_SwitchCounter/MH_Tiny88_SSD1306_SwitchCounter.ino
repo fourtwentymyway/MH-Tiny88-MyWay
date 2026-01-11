@@ -4,10 +4,10 @@
 const DCfont *currentFont = FONTTAMAMINI02;
 
 
-//---------------------------------------------------
-#define SW  1
+
+#define switch  1
 unsigned int i = 0;
-//===================================================
+
 void setup()
 {
   
@@ -21,14 +21,14 @@ void setup()
   oled.setCursor(7, 0);
   oled.print("420MyWay");
   oled.clear();
-  pinMode(SW,INPUT);
+  pinMode(switch,INPUT);
 } 
-//===================================================
+
 void loop()
 {   
-  if(digitalRead(SW) == LOW) {delay(100); i++;}
+  if(digitalRead(switch) == LOW) {delay(100); i++;}
   
-  //-------------------------------------------------
+ 
   oled.setFont(currentFont);
   oled.setCursor(0, 3);
   oled.print("#: ");
