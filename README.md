@@ -1,6 +1,6 @@
 Arduino and Some Attiny85 Examples With Tiny4kOLED , GyverOLED & PDQ_ST7735/PDQ_GFX .
 
-!!!ATTinyCore Or megaTinyCore Is Used For This Board Instead Of MH-ET Live Or Most Examples Wont Work!!!
+!!!ATTinyCore Is Used For This Board Instead Of MH-ET Live Or Most Examples Wont Work!!!
 Latest Arduino IDE And Libraries Were Used .
 
 Arduino Nano Pins Are Used Most Of the Time , Port Pins Will Be Used Sometimes Like PB1 , PC2 , PD3...ETC
