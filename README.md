@@ -1,4 +1,5 @@
 Arduino and Some Attiny85 Examples With Tiny4kOLED , GyverOLED & PDQ_ST7735/PDQ_GFX .
+![IMG_E0160](https://github.com/user-attachments/assets/7c73278d-77a5-414c-88d7-ae99d4414843)
 
 !!!ATTinyCore Is Used For This Board Instead Of MH-ET Live Or Most Examples Wont Work!!!
 Latest Arduino IDE And Libraries Were Used .
@@ -14,8 +15,6 @@ Sometimes This Helps :
 
 #define USE_MICRO_WIRE       //Use With GyverOLED Sometimes Lowers Sketch Size.
 
-
-
-
+![IMG_E0161](https://github.com/user-attachments/assets/ffae6846-9636-45ea-9621-6d14f3dd726b)
 
 
